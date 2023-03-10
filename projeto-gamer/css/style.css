@@ -8,10 +8,52 @@
     box-sizing: border-box;
 
 }
+
+/*clases genericas*/
+.layout-grid {
+
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid salmon;
+
+}
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 body {
     color: white;
 }
 /*header*/
 header {
+    height: 60px;
     background-color: #1b1426;
+    
+}
+header .header-top {
+    display: none;
+}
+header .bottom {
+    height: 60px;
+}
+
+header.logo{
+    width: 86px;
+
+}
+
+
+header nav {
+    position: fixed;
+    top: 60px;
+    width: 80vw;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+header .menu-usuarios {
+    display: none;
 }
