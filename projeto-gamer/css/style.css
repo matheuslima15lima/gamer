@@ -1,0 +1,17 @@
+/*imports de fonts*/
+
+/* reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    color: white;
+}
+/*header*/
+header {
+    background-color: #1b1426;
+}
