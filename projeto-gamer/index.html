@@ -43,12 +43,12 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- menu hamburguer . visivel apenas no smartphone -->
-                <img src="assets/icons/Vectormenu hamburguer.svg"
+                <img onclick="mostrarMenu()" src="assets/icons/Vectormenu hamburguer.svg"
                     alt="icone de telefone. abre e fecha o menu principal, no celular">
 
                 <img src="assets/images/logotipo-gamerlogo.svg"
                     alt="imagem logotipo gamer com um controle de video game no centro">
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <a href="">inicio</a>
                     <a href="">jogadores</a>
                     <a href="">equipes</a>
@@ -100,6 +100,14 @@
 
 
     </header>
+
+
+    <script>
+        function mostrarMenu() {
+            //pega a navbar pelo id
+            document.getElementById("menu").classList.toggle("mostrar-menu")
+        }
+    </script>
 </body>
 
 </html>
