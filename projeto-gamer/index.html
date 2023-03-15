@@ -68,19 +68,20 @@
                     <div class="midias-sociais">
                         <a href=""><img src="assets/icons/Vectorface.svg" alt="imagem link do facebook da empresa">
                         </a>
-    
-    
+
+
                         <a href=""><img src="assets/icons/instagram.svg" alt="imagem link do linkedin da empresa">
                         </a>
-    
-    
+
+
                         <a href=""><img src="assets/icons/Vectorlinkedin.svg" alt="imagem link do instagram da empresa">
                         </a>
                     </div>
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img src="assets/icons/Vectorpoints.svg" alt="icone 3 pontihos, abre e fecha o menu de usuarios">
+                <img onclick="mostrarUsuarios()" src="assets/icons/Vectorpoints.svg"
+                    alt="icone 3 pontihos, abre e fecha o menu de usuarios">
 
                 <div class="menu-usuarios">
 
@@ -99,7 +100,30 @@
         </div>
 
 
+
+
+
+
     </header>
+
+    <main>
+        <article class="banner">
+            <h1>liga gamers</h1>
+            <a href="" class="btn-sobre">sobre</a>
+        </article>
+
+        <section class="jogos">
+            <div class="layout-grid jogos-flex">
+                <img src="assets/images/fifa.png" alt="imagem do jogo fifa 2023">
+                <img src="assets/images/cs.png" alt="imagem do jogo counter strike">
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer></footer>
 
 
     <script>
@@ -107,7 +131,14 @@
             //pega a navbar pelo id
             document.getElementById("menu").classList.toggle("mostrar-menu")
         }
+
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
+        }
     </script>
 </body>
+
+
+
 
 </html>
