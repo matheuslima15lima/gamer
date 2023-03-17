@@ -142,11 +142,7 @@ header .menu-usuarios {
 }
 
 
-/* MAIN */
 
-main {
-    margin-top: 60px;
-}
 
 /* Banner */
 
@@ -167,7 +163,7 @@ main .banner {
 
 main .banner h1 {
     font-family: TitilliumWeb-Black;
-    font-size: 40px;
+    font-size: 60px;
     text-shadow: 0 0 7px #FD4255;
 }
 
@@ -212,11 +208,14 @@ main .jogos .jogos-flex {
 
     /* header */
     header {
+        position: static;
         height: 140px;
+        width: 100%;
     }
 
     header .header-top {
         display: block;
+        height: 50px;
         border-bottom: 2px solid #F9AA01;
     }
 
@@ -228,27 +227,43 @@ main .jogos .jogos-flex {
     header .header-bottom nav .midias-sociais {
         display: none;
     }
+
+    header .header-bottom {
+        height: 90px;
+    }
+
     header .logo {
         width: 200px;
     }
+
     header .header-top .contatos {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 450px;
-        border: 2px solid #FD4255;
+        font-family: inter;
+        font-size: 14px;
+        font-weight: 400;
+        /* border: 2px solid #FD4255; */
     }
-    header .header-top .contatos > div {
+
+    /* links .phone, .mail */
+    header .header-top .contatos>a {
         display: flex;
+        align-items: center;
         gap: 10px;
         width: 200px;
-        border-bottom: 2px solid #F9AA01;
+        /* border-bottom: 2px solid #F9AA01; */
 
     }
-     header .header-top .midias-sociais {
+
+    header .header-top .midias-sociais {
         width: 140px;
-        border: 2px solid #FD4255;
-     }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid #FD4255; */
+    }
 
 
     header .header-bottom nav {
@@ -262,7 +277,8 @@ main .jogos .jogos-flex {
         justify-content: space-between;
     }
 }
-header .header-bottom nav > a {
+
+header .header-bottom nav>a {
     font-size: 14px;
     padding: 0;
     border: none;
@@ -274,7 +290,32 @@ header .header-bottom .menu-usuarios {
     position: static;
     width: 140px;
     flex-direction: row;
+    justify-content: space-between;
     height: auto;
     background-color: transparent;
     background-image: none;
 }
+
+/* MAIN */
+
+main {
+    margin-top: 0;
+}
+
+main .banner {
+    height: 772px;
+    background-image: url(../assets/images/Banner_background_1.png);
+    background-position: center;
+}
+main .jogos .jogos-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+main .jogos img {
+    width: 556px;
+    height: 313px;
+}
+
+
