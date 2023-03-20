@@ -296,27 +296,19 @@ header .header-bottom .menu-usuarios {
     background-color: transparent;
     background-image: none;
 }
+    /* main */
 
-/* MAIN */
+    main {
+        margin-top: 60px;
+        height: 687px;
 
-main {
-    margin-top: 0;
-}
-
-main .banner {
-    height: 772px;
-    background-image: url(../assets/images/Banner_background_1.png);
-    background-position: center;
-}
-main .jogos .jogos-flex {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 500px;
-}
-main .jogos img {
-    width: 556px;
-    height: 313px;
-}
-
-
+        background-image: url(../assets/images/fundo-login-mobile.png);
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        padding: 100px;
+        font-family: TitilliumWeb-Black;
+        
+    }
+    
