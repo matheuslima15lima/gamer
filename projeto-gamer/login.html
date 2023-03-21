@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,6 +10,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="header-top">
             <div class="layout-grid alinhamento-between-center">
@@ -54,7 +54,7 @@
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
                     <a href="">Notícias</a>
-                    
+
 
                     <!-- vísível apenas no mobile -->
                     <a class="phone">
@@ -98,11 +98,7 @@
             </div>
         </div>
     </header>
-    <main>
-        <h1>login</h1>
-    </main>
 
-   
 
     <script>
 
@@ -122,21 +118,47 @@
 
 
 
-    <!-- main -->
-    <!-- footer -->
+<!-- main -->
+<main>
 
-    <script>
 
-        function mostrarMenu() {
-            // pega a navbar pelo id
-            document.getElementById("menu").classList.toggle("mostrar-menu");
-        }
 
-        function mostrarUsuarios() {
-            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
-        }
 
-    </script>
-    
+    <div class="layout-grid">
+        <h1>login</h1>
+
+        <form action="">
+            <div class="campo">
+                <img src="assets/icons/Vectoruser.svg">
+                <input type="email" id="email" placeholder="digite seu email:">
+
+            </div>
+            <div class="campo">
+                <img src="assets/icons/Vectorchave.svg">
+                <input type="password" id="senha" placeholder="digite sua senha:">
+
+            </div>
+
+        </form>
+    </div>
+
+</main>
+
+<!-- footer -->
+
+<script>
+
+    function mostrarMenu() {
+        // pega a navbar pelo id
+        document.getElementById("menu").classList.toggle("mostrar-menu");
+    }
+
+    function mostrarUsuarios() {
+        document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
+    }
+
+</script>
+
 </body>
+
 </html>
