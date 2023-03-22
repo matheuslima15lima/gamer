@@ -116,7 +116,7 @@ header .header-bottom nav .midias-sociais {
     bottom: 20px;
     left: 0;
     width: 100%;
-    
+
 
     display: flex;
     justify-content: center;
@@ -296,56 +296,104 @@ header .header-bottom .menu-usuarios {
     background-color: transparent;
     background-image: none;
 }
-    /* main */
 
-    main {
-        margin-top: 0;
-        height: 687px;
-        
+/* main */
 
-        background-image: url(../assets/images/fundo-login-mobile.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        padding: 60px;
-        font-family: TitilliumWeb-Black;
-        font-size: 25px;
-    }
+main {
+    margin-top: 0;
+    height: 687px;
 
-    div.campo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        border: 1px solid #ffffff;
-        margin-bottom: 20px;
-        width: 100%;
-        height: 40px;
 
-    }
-  
+    background-image: url(../assets/images/fundo-login-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /*bottom*/
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-family: TitilliumWeb-Black;
+    font-size: 17px;
+}
 
+div.campo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    background:
+        /* content */
+        linear-gradient(to right bottom, rgba(27, 20, 38, .5), rgba(27, 20, 38, .05)) padding-box,
+        /* border */
+        linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(239, 239, 239, 0.05)) border-box;
+
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+
+}
+
+
+
+
+
+main form input {
+
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    width: 100%;
+    height: 30px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+
+}
+
+main form input::placeholder {
+    color: #ffffff;
+}
+
+.layout-grid h1 {
+    display: flex;
+    justify-content: center;
+}
+
+div.botao button {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #F9AA01;
+    font-family: TitilliumWeb-Bold;
+    font-size: 18px;
+}
+
+.layout-grid h1 {
+    margin-top: 20px;
+}
+ 
+    /********************* Footer *********************/
+footer {
+    height: 1500px;
+    background-image: url(../assets/images/backgroung_footer.png);
+}
+    
     
 
-
-    main form input {
-        
-        display: flex;
-        justify-content: center;
-        text-align:  left;
-        color: white;
-        width: 100%;
-        height: 30px;
-       
-        background-color: transparent;
-        border: none;
-        outline: none;
-        
-       
-    }
-
-    main form input::placeholder {
-        color: white;
-    }
