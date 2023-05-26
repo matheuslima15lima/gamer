@@ -7,4 +7,8 @@ Produto p = new Produto();
 
 ProdutoController controler = new ProdutoController();
 
+controler.Cadastrar();
+
 controler.ListarProdutos();
+
+

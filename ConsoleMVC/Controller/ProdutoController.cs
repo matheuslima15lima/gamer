@@ -21,5 +21,30 @@ namespace ConsoleMVC.Controller
             // chamada da view passando a lista
             produtoView.Listar(produtos);
         }
+
+        public void Cadastrar()
+        {
+            Produto novoProduto = produtoView.cadastrar();
+
+            produto.inserir(novoProduto);
+
+
+
+
+            
+
+
+
+
+            // Console.WriteLine($"informe o código:");
+            // produto.Codigo = int.Parse(Console.ReadLine());
+
+            // Console.WriteLine($"informe o nome:");
+            // produto.Nome = Console.ReadLine();
+            
+            // Console.WriteLine($"informe o preço:");
+            // produto.Preco = float.Parse(Console.ReadLine());
+            
+        }
     }
 }

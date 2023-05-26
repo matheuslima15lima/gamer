@@ -9,10 +9,35 @@ namespace ConsoleMVC.View
         {
             foreach (var item in produto)
             {
-                Console.WriteLine($"Código: {item.Codigo}");
+                Console.WriteLine($"\nCódigo: {item.Codigo}");
+                
+                
                 Console.WriteLine($"Nome: {item.Nome}");
+                
+                
                 Console.WriteLine($"Preço: {item.Preco:C}"); 
             }
+        }
+
+        public Produto cadastrar()
+        {
+            Produto novoProduto = new Produto();
+
+            Console.WriteLine($"informe o código");
+            novoProduto.Codigo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"informe o nome:");
+            novoProduto.Nome = Console.ReadLine();
+            
+            Console.WriteLine($"informe o preço:");
+            novoProduto.Preco = float.Parse(Console.ReadLine());
+
+            return novoProduto;
+            
+            
+            
+            
+            
         }
     }
 }
